@@ -392,15 +392,24 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnSubtractActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubtractActionPerformed
-        // TODO add your handling code here:
+         erase = true;
+        calculateResult();
+        operator = OperatorType.SUBTRACT;
+        displayResult();
     }//GEN-LAST:event_btnSubtractActionPerformed
 
     private void btnMultiplyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplyActionPerformed
-        // TODO add your handling code here:
+        erase = true;
+        calculateResult();
+        operator = OperatorType.MULTIPLY;
+        displayResult();
     }//GEN-LAST:event_btnMultiplyActionPerformed
 
     private void btnDivideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivideActionPerformed
-        // TODO add your handling code here:
+         erase = true;
+        calculateResult();
+        operator = OperatorType.DIVIDE;
+        displayResult();
     }//GEN-LAST:event_btnDivideActionPerformed
 
     private void btnEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqualActionPerformed
