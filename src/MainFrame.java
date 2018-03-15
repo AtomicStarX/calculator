@@ -385,35 +385,46 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        if(!erase){
         erase = true;
         calculateResult();
         operator = OperatorType.ADD;
         displayResult();
+        }
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnSubtractActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubtractActionPerformed
-         erase = true;
+        if(!erase){
+        erase = true;
         calculateResult();
         operator = OperatorType.SUBTRACT;
         displayResult();
+        }
     }//GEN-LAST:event_btnSubtractActionPerformed
 
     private void btnMultiplyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplyActionPerformed
-        erase = true;
-        calculateResult();
-        operator = OperatorType.MULTIPLY;
-        displayResult();
+        if(!erase){
+         erase = true;
+         calculateResult();
+         operator = OperatorType.MULTIPLY;
+         displayResult();
+        }
     }//GEN-LAST:event_btnMultiplyActionPerformed
 
     private void btnDivideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivideActionPerformed
-         erase = true;
-        calculateResult();
-        operator = OperatorType.DIVIDE;
-        displayResult();
+        if(!erase){
+          erase = true;
+          calculateResult();
+          operator = OperatorType.DIVIDE;
+          displayResult();
+        }
     }//GEN-LAST:event_btnDivideActionPerformed
 
     private void btnEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqualActionPerformed
-        // TODO add your handling code here:
+        if(!erase){
+            calculateResult();
+            displayResult();
+        }
     }//GEN-LAST:event_btnEqualActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
