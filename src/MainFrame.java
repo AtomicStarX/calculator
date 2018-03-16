@@ -51,8 +51,9 @@ public class MainFrame extends javax.swing.JFrame {
         if(s.isEmpty()){
             s = "0";
         }
-        s = s.replaceAll(""+decimalSeparator, ".");
-        operand = Double.parseDouble(textFieldDisplay.getText());
+        s = s.replaceAll("\\"+decimalSeparator, ".");
+        System.out.println(s);
+        operand = Double.parseDouble(s);
         switch (operator) {
             case ADD:
                 accumulator += operand;
