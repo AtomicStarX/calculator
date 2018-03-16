@@ -69,9 +69,10 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void displayResult() {
         String s = ""+accumulator;
+        System.out.println(s);
         if(s.contains(".")){
             s = s.replaceAll("0+$", "");
-            s = s.replaceAll(".$","");
+            s = s.replaceAll("\\.$","");
         }
         textFieldDisplay.setText(s);
         // BigDecimal number = new BigDecimal(accumulator);
@@ -431,9 +432,10 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void btnEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqualActionPerformed
         if (!erase) {
-            erase = true;
+            //erase = true;
             calculateResult();
             displayResult();
+            operator = OperatorType.NONE;
         }
     }//GEN-LAST:event_btnEqualActionPerformed
 
